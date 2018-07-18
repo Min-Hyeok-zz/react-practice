@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* 기본 세팅 */
+$mainColor: #1F66FF;
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+    box-sizing: border-box;
+}
+
+label,button{cursor: pointer;}

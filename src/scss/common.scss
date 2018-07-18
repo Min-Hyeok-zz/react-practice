@@ -1,0 +1,9 @@
+@import "./settings";
+@import "./functions";
+
+/* 헤더 */
+
+#header{
+    height: 60px;
+    background: $mainColor;
+}

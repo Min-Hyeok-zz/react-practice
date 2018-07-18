@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* 기본 세팅 */
+* { margin: 0; padding: 0; list-style: none; text-decoration: none; outline: none; color: inherit; box-sizing: border-box; }
+
+label, button { cursor: pointer; }
+
+/* 헤더 */
+#header { height: 60px; background: #1F66FF; }
+
+/*# sourceMappingURL=common.css.map */
