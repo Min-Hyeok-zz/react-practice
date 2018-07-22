@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 기본 세팅 */
-$mainColor: #1F66FF;
+$mainColor: rgb(82, 82, 82);
 
 *{
     margin: 0;
@@ -13,4 +13,20 @@ $mainColor: #1F66FF;
     box-sizing: border-box;
 }
 
-label,button{cursor: pointer;}
+label,button{
+    cursor: pointer;
+}
+
+.btn{
+    display: inline-block;
+    transition: .5s;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.small{padding: 3px 6px;}
+.normal{padding: 5px 10px;}
+.big{padding: 10px 15px;}
+
+.default{background: $mainColor;color: #fff;}
