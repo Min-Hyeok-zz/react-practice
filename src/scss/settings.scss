@@ -11,6 +11,8 @@ $mainColor: rgb(82, 82, 82);
     outline: none;
     color: inherit;
     box-sizing: border-box;
+    font-family: Arial;
+    @include mobile () { font-size: 14px; }
 }
 
 label,button{

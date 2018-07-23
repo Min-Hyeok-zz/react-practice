@@ -6,9 +6,10 @@ function menuToggle(){
 }
 
 function joinPopup(){
-    $(".join").stop().fadeToggle(500)
+    $(".join").toggleClass('active')
+    $(".join form label input").val("")
 }
 
 $(document)
-.on("click",".menu-toggle,.modal",menuToggle)
-.on("click",".join-btn,.join > .close",joinPopup)
+.on("click",".menu-toggle,.modal,#aside .close",menuToggle)
+.on("click",".join-btn,.join-close",joinPopup)
