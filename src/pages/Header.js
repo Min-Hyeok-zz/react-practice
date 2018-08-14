@@ -6,7 +6,7 @@ class Header extends Component {
         return(
             <React.Fragment>
                 <div className="modal"></div>
-                <div className="join">
+                <div className="popup">
                     <form action="" method="post" className="form">
                         <p>Create Your Account!</p>
                         <label><p>ID</p>

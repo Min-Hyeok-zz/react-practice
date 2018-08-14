@@ -6,8 +6,8 @@ function menuToggle(){
 }
 
 function joinPopup(){
-    $(".join").toggleClass('active')
-    $(".join form label input").val("")
+    $(".popup").toggleClass('active')
+    $(".popup form label input").val("")
 }
 
 $(document)
