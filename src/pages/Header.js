@@ -2,12 +2,15 @@ import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
 
 class Header extends Component {
+    memberJoin = (e) => {
+        e.preventDefault()
+    }
     render () {
         return(
             <React.Fragment>
                 <div className="modal"></div>
                 <div className="popup">
-                    <form action="" method="post" className="form">
+                    <form action="" method="post" className="form" onSubmit={this.memberJoin}>
                         <p>Create Your Account!</p>
                         <label><p>ID</p>
                             <input type="text" name="id" id="id" required/>

@@ -1,3 +1,4 @@
-exports.memberJoin = () => {
-    
+memberJoin = (res,req) => {
+    console.log('asdasdsa')
+    return 'asdasd'
 }
