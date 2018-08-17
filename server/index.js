@@ -12,8 +12,8 @@ app.use(cors())
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded())
 
-const member = require('./core/member')
 const board = require('./core/board')
+const member = require('./core/member')
 
 app.get('/', member.test)
 

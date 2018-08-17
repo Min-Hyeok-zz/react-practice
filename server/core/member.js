@@ -1,10 +1,15 @@
 const _this = this
 
 class member {
-    constructor() {  }
+    constructor() {
+        member.db = require('../dbConnect')
+    }
 
     test(req,res) {
-        res.send('깔깔')
+        const sql = `select * from member`
+        const a = member.db.query(sql, (err, results) => {
+            res.json(results)
+        })
     }
 
 
