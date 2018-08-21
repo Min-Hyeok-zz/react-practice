@@ -1,4 +1,5 @@
 export { default as Main } from './Main'
 export { default as Header } from './Header'
 export { default as Footer } from './Footer'
-export { default as Join } from './member/join'
+export { default as SignUp } from './member/SignUp'
+export { default as SignIn } from './member/SignIn'

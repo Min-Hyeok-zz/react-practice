@@ -1,5 +1,7 @@
 class board {
-    constructor() {}
+    
+    constructor() { board.db = require('../dbConnect') }
+
     asd (req,res) {
         res.send('asd')
     }

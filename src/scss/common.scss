@@ -13,14 +13,13 @@
     background: rgba(0,0,0,0.6);
     display: none;
 }
-.hidden{display: none;}
 
 /* header */
+
 .menu-toggle{
     position: relative;
     width: 40px;
     height: 25px;
-    top: -2px;
     cursor: pointer;
     >span{
         width: 100%;
@@ -37,13 +36,18 @@
     background: $mainColor;
     color: #fff;
     nav{
-        max-width: 1600px;
         height: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 2%;
+        >.menu{
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         >ul{
             display: flex;
             align-items: center;
@@ -79,24 +83,13 @@
     &.active{
         left: 0;
     }
-    .menu-toggle{
-        position: absolute;
-        width: 30px;
-        right: 20px;
-        top: 20px;
-        span{
-            &:nth-child(1){transform: rotate(45deg) translateY(17px);}
-            &:nth-child(2){width: 0%;opacity: 0;}
-            &:nth-child(3){transform: rotate(-45deg) translateY(-17px);}
-        }
-    }
 }
 
 /* content section */
 
 .content{
     max-width: 1200px;
-    height: 100%;
+    height: calc(100vh - 90px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,32 +112,23 @@
 
 /* sign up/in popup */
 
-.popup{
-    position: fixed;
+.formGroup{
     width: 100%;
-    height: 0%;
-    left: 0;
-    top: 0;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 5;
-    background: rgba(0,0,0,0.6);
-    transition: .5s;
-    overflow: hidden;
-    &.active{height: 100%;}
+    padding: 0 10px;
     .form{
-        width: 35%;
-        box-shadow: 0 0 50px rgba(0,0,0,0.4);
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0 0 50px rgba(0,0,0,0.2);
         padding: 10px;
         background: #fff;
         border-radius: 5px;
-        margin: 0 auto;
         transition: .5s;
-        @include tablet () { width: 70%; }
-        @include mobile () { width: 95%; }
         p{margin-bottom: 30px;text-align: center;}
-        div{button{width: 40%;margin: 0 5%;}}
+        div{button{width: 100%;}}
         label{
             p{margin-bottom: 10px;text-align: left;}
             button{margin-left: calc(50% - 41.5px);}

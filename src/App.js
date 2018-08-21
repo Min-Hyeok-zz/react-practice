@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { Header, Footer, Main, Join } from './pages'
+import { Header, Footer, Main, SignUp, SignIn } from './pages'
 
 const App = () => {
   return (
@@ -10,7 +10,8 @@ const App = () => {
         <div className="content">
             <Switch>
               <Route exact path="/" component={Main}/>
-              <Route exact path="/join" component={Join}/>
+              <Route path="/signup" component={SignUp}/>
+              <Route path="/signin" component={SignIn}/>
             </Switch>
         </div>
         <Footer/>
